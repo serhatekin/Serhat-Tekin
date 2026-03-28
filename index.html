@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serhat Tekin | Araştırma ve Keşif Portalı</title>
+    <style>
+        /* Sitenin Genel Ayarları */
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
+
+        /* Üst Menü Tasarımı */
+        header { background-color: #2c3e50; color: white; padding: 15px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        nav { background-color: #34495e; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; font-size: 16px; font-weight: bold; transition: background 0.3s; }
+        nav a:hover { background-color: #e74c3c; }
+
+        /* Ana İçerik Alanı */
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .welcome-text { text-align: center; margin-bottom: 40px; }
+
+        /* Makale Kartları (Grid Sistemi) */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; /* Resimlerin köşelerini kartla uyumlu keser */ transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+
+        /* +++ YENİ CSS: Kart Resimlerinin Tasarımı +++ */
+        .card img {
+            width: 100%;       /* Kartın tam genişliğini kapla */
+            height: 180px;     /* Tüm resimler aynı yükseklikte olsun */
+            object-fit: cover; /* Resim bozulmadan, alanı dolduracak şekilde kesilsin */
+        }
+
+        /* Kart İçeriği (Yazı Alanı) */
+        .card-body { padding: 20px; }
+        .card-category { color: #e74c3c; font-size: 14px; font-weight: bold; text-transform: uppercase; }
+        .card-title { font-size: 20px; margin: 10px 0; color: #2c3e50; }
+        .card-desc { font-size: 15px; color: #666; line-height: 1.6; }
+        .read-more { display: inline-block; margin-top: 15px; color: #3498db; text-decoration: none; font-weight: bold; }
+
+        /* En Alt Kısım (Footer) */
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header><h1>SERHAT TEKİN</h1></header>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="bilisim.html">Bilişim</a>
+        <a href="#">Spor</a>
+        <a href="sinema.html">Sanat & Sinema</a>
+        <a href="gezi.html">Gezi</a>
+        <a href="#">Akademi</a>
+        <a href="yakit-menzili.html">Otomotiv</a>
+        <a href="hakkimda.html">Hakkımda</a>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-text">
+            <h2>Araştırma ve Keşif Portalına Hoş Geldiniz</h2>
+            <p>Sanattan spora, yazılımdan seyahate kadar derinlemesine analizler ve pratik bilgiler.</p>
+        </div>
+
+        <div class="grid-container">
+            
+            <div class="card">
+                <img src="resimler/sinema.jpg" alt="Sanat & Sinema">
+                <div class="card-body">
+                    <div class="card-category">Sanat & Sinema</div>
+                    <h3 class="card-title">Tommy Shelby ve Black Star Day</h3>
+                    <p class="card-desc">Peaky Blinders dünyasindeki bu efsanevi kavram aslında psikolojik olarak neyi temsil ediyor?</p>
+                    <a href="sinema.html" class="read-more">Devamını Oku &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resimler/gezi.jpg" alt="Gezi">
+                <div class="card-body">
+                    <div class="card-category">Gezi</div>
+                    <h3 class="card-title">Vizesiz Balkanlar: Üsküp ve Priştine</h3>
+                    <p class="card-desc">Kuzey Makedonya ve Kosova sınır geçişleri, yerel ulaşım ve bütçe planlaması rehberi.</p>
+                    <a href="gezi.html" class="read-more">Devamını Oku &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resimler/bilisim.jpg" alt="Bilişim">
+                <div class="card-body">
+                    <div class="card-category">Bilişim</div>
+                    <h3 class="card-title">OOP ve Veri Yapıları Neden Önemli?</h3>
+                    <p class="card-desc">Yönetim Bilişim Sistemleri ve bilgisayar bilimleri öğrencileri için hayat kurtaran pratik kodlama notları.</p>
+                    <a href="bilisim.html" class="read-more">Devamını Oku &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resimler/otomotiv.jpg" alt="Otomotiv">
+                <div class="card-body">
+                    <div class="card-category">Otomotiv</div>
+                    <h3 class="card-title">Yakıt Işığı Yandıktan Sonra Ne Olur?</h3>
+                    <p class="card-desc">1.4 D-4D dizel motorlarda yakıt tüketimi analizi ve araç sahiplerinin bilmesi gerekenler.</p>
+                    <a href="yakit-menzili.html" class="read-more">Devamını Oku &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer><p>&copy; 2026 Serhat Tekin. Tüm hakları saklıdır.</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hakkımda | Serhat Tekin</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 0; }
+        header { background-color: #2c3e50; color: white; padding: 15px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        nav { background-color: #34495e; text-align: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-weight: bold; transition: background 0.3s; }
+        nav a:hover { background-color: #e74c3c; border-radius: 5px; }
+        
+        .about-container { max-width: 850px; margin: 50px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; gap: 40px; }
+        
+        /* Sol Taraf: Kartvizit Alanı */
+        .profile-sidebar { flex: 1; min-width: 250px; text-align: center; border-right: 1px solid #eee; padding-right: 20px; }
+        .profile-img { width: 160px; height: 160px; background-color: #f1f2f6; border-radius: 50%; margin: 0 auto 20px auto; object-fit: cover; border: 3px solid #ddd; }
+        .profile-name { font-size: 24px; color: #2c3e50; margin-bottom: 5px; }
+        .profile-title { font-size: 15px; color: #7f8fa6; margin-bottom: 20px; }
+        
+        /* YENİ: Doğrudan Görünen Mail Adresi Tasarımı */
+        .contact-email { display: inline-block; background-color: #f8f9fa; color: #2c3e50; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: bold; border: 1px solid #ddd; transition: all 0.3s; word-break: break-all; }
+        .contact-email:hover { background-color: #2c3e50; color: white; }
+
+        /* Sağ Taraf: Biyografi Yazısı */
+        .bio-content { flex: 2; min-width: 300px; }
+        .bio-content h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; font-size: 24px; }
+        .bio-content p { font-size: 15px; line-height: 1.8; color: #555; margin-bottom: 15px; }
+        
+        /* Yetenekler ve İlgi Alanları Etiketleri */
+        .tags-container { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { background-color: #f8f9fa; color: #555; padding: 6px 12px; border-radius: 15px; font-size: 13px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <header><h1>SERHAT TEKİN</h1></header>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="bilisim.html">Bilişim</a>
+        <a href="sinema.html">Sanat & Sinema</a>
+        <a href="gezi.html">Gezi</a>
+        <a href="yakit-menzili.html">Otomotiv</a>
+        <a href="hakkimda.html">Hakkımda</a>
+    </nav>
+
+    <div class="about-container">
+        
+        <div class="profile-sidebar">
+            <img src="resimler/profil.jpg" alt="Serhat Tekin" class="profile-img">
+            <h2 class="profile-name">Serhat Tekin</h2>
+            <div class="profile-title">Öğrenci</div>
+            <p style="color: #999; font-size: 13px; margin-bottom: 20px;">İstanbul, Türkiye</p>
+            
+            <p style="font-size: 13px; color: #7f8fa6; margin-bottom: 5px; font-weight: bold;">Bana Ulaşın:</p>
+            <a href="mailto:serhatekin009@gmail.com" class="contact-email">serhatekin009@gmail.com</a>
+        </div>
+
+        <div class="bio-content">
+            <h2>Merhaba!</h2>
+            <p>Ben Serhat. İstanbul Teknik Üniversitesi'nde İnşaat Mühendisliği, eş zamanlı olarak da İstanbul Üniversitesi'nde Yönetim Bilişim Sistemleri (YBS) okuyorum. Hem yapıların mühendislik tarafına hem de verinin dijital dünyasına ilgi duyuyorum.</p>
+            
+            <p>Öğrencilik hayatımla birlikte farklı alanlarda tecrübe edinmeye çalışıyorum. Bugüne kadar veri giriş operatörlüğü ve mağazacılık gibi sektörlerde çalışarak işin mutfağını görme fırsatım oldu. Ayrıca Model Birleşmiş Milletler (MUN) etkinliklerinde yer almaktan, yeni konular araştırıp öğrenmekten çok keyif alıyorum.</p>
+
+            <p>Boş zamanlarımda finans, spor analizleri ve müzik ile ilgileniyorum. Yeni rotalar keşfetmeyi, öğrendiğim dilleri ve yazılım araçlarını pratik hayata dökmeyi seviyorum. Hedefim, aldığım eğitimleri güzel ve faydalı projelere dönüştürebilmek.</p>
+            
+            <div class="tags-container">
+                <span class="tag">İnşaat Mühendisliği</span>
+                <span class="tag">Yönetim Bilişim Sistemleri</span>
+                <span class="tag">Veri Analizi</span>
+                <span class="tag">MUN</span>
+                <span class="tag">Finans & Yatırım</span>
+                <span class="tag">İngilizce (C1)</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
