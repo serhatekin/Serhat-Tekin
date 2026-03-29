@@ -1,18 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serhat Tekin | Araştırma ve Keşif Portalı</title>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSHVG2K1H6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-QSHVG2K1H6');
-    </script>
-
+    <title>Serhat Tekin | Research and Discovery Portal</title>
     <style>
         /* Sitenin Genel Ayarları */
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; transition: background-color 0.3s, color 0.3s; }
@@ -22,7 +13,7 @@
         nav a { color: white; text-decoration: none; padding: 12px 20px; font-size: 16px; font-weight: bold; transition: background 0.3s; }
         nav a:hover { background-color: #e74c3c; border-radius: 4px; }
         
-        /* Dil Seçeneği Butonu Tasarımı */
+        /* Dil Seçeneği Butonu */
         .lang-toggle { background-color: transparent; border: 2px solid #e74c3c; color: white !important; margin-left: 15px; border-radius: 5px; padding: 6px 15px !important; }
         .lang-toggle:hover { background-color: #e74c3c !important; }
 
@@ -56,83 +47,83 @@
 
     <header><h1>SERHAT TEKİN</h1></header>
     <nav>
-        <a href="index.html">Ana Sayfa</a>
-        <a href="bilisim.html">Bilişim</a>
-        <a href="sinema.html">Sanat & Sinema</a>
-        <a href="gezi.html">Gezi</a>
-        <a href="yakit-menzili.html">Otomotiv</a>
-        <a href="projeler.html">Projelerim</a>
-        <a href="hakkimda.html">Hakkımda</a>
+        <a href="index-en.html">Home</a>
+        <a href="bilisim.html">IT</a>
+        <a href="sinema.html">Art & Cinema</a>
+        <a href="gezi.html">Travel</a>
+        <a href="yakit-menzili.html">Automotive</a>
+        <a href="projeler.html">Projects</a>
+        <a href="hakkimda.html">About</a>
         
-        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙 Gece Modu</button>
-        <a href="index-en.html" class="lang-toggle">🇬🇧 EN</a>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙 Dark Mode</button>
+        <a href="index.html" class="lang-toggle">🇹🇷 TR</a>
     </nav>
 
     <div class="container">
         <div class="welcome-text">
-            <h2>Araştırma ve Keşif Portalına Hoş Geldiniz</h2>
-            <p>Sanattan spora, yazılımdan seyahate kadar derinlemesine analizler ve pratik bilgiler.</p>
+            <h2>Welcome to the Research and Discovery Portal</h2>
+            <p>In-depth analyses and practical insights ranging from art and sports to software and travel.</p>
         </div>
 
         <div class="grid-container">
             <div class="card">
-                <img src="resimler/sinema.jpg" alt="Sanat & Sinema">
+                <img src="resimler/sinema.jpg" alt="Art & Cinema">
                 <div class="card-body">
-                    <div class="card-category">Sanat & Sinema</div>
-                    <h3 class="card-title">Tommy Shelby ve Black Star Day</h3>
-                    <p class="card-desc">Peaky Blinders dünyasındaki bu efsanevi kavram aslında psikolojik olarak neyi temsil ediyor?</p>
-                    <a href="sinema.html" class="read-more">Devamını Oku &rarr;</a>
+                    <div class="card-category">Art & Cinema</div>
+                    <h3 class="card-title">Tommy Shelby and Black Star Day</h3>
+                    <p class="card-desc">What does this legendary concept in the Peaky Blinders universe actually represent psychologically?</p>
+                    <a href="sinema.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="resimler/gezi.jpg" alt="Gezi">
+                <img src="resimler/gezi.jpg" alt="Travel">
                 <div class="card-body">
-                    <div class="card-category">Gezi</div>
-                    <h3 class="card-title">Vizesiz Balkanlar: Üsküp ve Priştine</h3>
-                    <p class="card-desc">Kuzey Makedonya ve Kosova sınır geçişleri, yerel ulaşım ve bütçe planlaması rehberi.</p>
-                    <a href="gezi.html" class="read-more">Devamını Oku &rarr;</a>
+                    <div class="card-category">Travel</div>
+                    <h3 class="card-title">Visa-Free Balkans: Skopje and Pristina</h3>
+                    <p class="card-desc">A guide to border crossings, local transport, and budget planning for North Macedonia and Kosovo.</p>
+                    <a href="gezi.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="resimler/bilisim.jpg" alt="Bilişim">
+                <img src="resimler/bilisim.jpg" alt="IT">
                 <div class="card-body">
-                    <div class="card-category">Bilişim</div>
-                    <h3 class="card-title">OOP ve Veri Yapıları Neden Önemli?</h3>
-                    <p class="card-desc">Yönetim Bilişim Sistemleri öğrencileri için hayat kurtaran pratik kodlama notları.</p>
-                    <a href="bilisim.html" class="read-more">Devamını Oku &rarr;</a>
+                    <div class="card-category">IT</div>
+                    <h3 class="card-title">Why are OOP and Data Structures Important?</h3>
+                    <p class="card-desc">Life-saving practical coding notes for Management Information Systems students.</p>
+                    <a href="bilisim.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="resimler/otomotiv.jpg" alt="Otomotiv">
+                <img src="resimler/otomotiv.jpg" alt="Automotive">
                 <div class="card-body">
-                    <div class="card-category">Otomotiv</div>
-                    <h3 class="card-title">Yakıt Işığı Yandıktan Sonra Ne Olur?</h3>
-                    <p class="card-desc">1.4 D-4D dizel motorlarda yakıt tüketimi analizi ve araç sahiplerinin bilmesi gerekenler.</p>
-                    <a href="yakit-menzili.html" class="read-more">Devamını Oku &rarr;</a>
+                    <div class="card-category">Automotive</div>
+                    <h3 class="card-title">What Happens When the Fuel Light Comes On?</h3>
+                    <p class="card-desc">Fuel consumption analysis for 1.4 D-4D diesel engines and what car owners need to know.</p>
+                    <a href="yakit-menzili.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer><p>&copy; 2026 Serhat Tekin. Tüm hakları saklıdır.</p></footer>
+    <footer><p>&copy; 2026 Serhat Tekin. All rights reserved.</p></footer>
 
     <script>
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-mode');
-            document.getElementById('themeBtn').innerText = '☀️ Gündüz Modu';
+            document.getElementById('themeBtn').innerText = '☀️ Light Mode';
         }
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');
             let themeBtn = document.getElementById('themeBtn');
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('theme', 'dark');
-                themeBtn.innerText = '☀️ Gündüz Modu';
+                themeBtn.innerText = '☀️ Light Mode';
             } else {
                 localStorage.setItem('theme', 'light');
-                themeBtn.innerText = '🌙 Gece Modu';
+                themeBtn.innerText = '🌙 Dark Mode';
             }
         }
     </script>
