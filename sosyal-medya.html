@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeni Yazı | Serhat Tekin</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSHVG2K1H6"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QSHVG2K1H6');</script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 0; transition: 0.3s; }
+        header { background-color: #2c3e50; color: white; padding: 15px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        
+        /* Menü Tasarımı */
+        nav { background-color: #34495e; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 5px 0; transition: 0.3s; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-size: 15px; font-weight: bold; transition: background 0.3s; }
+        nav a:hover { background-color: #e74c3c; border-radius: 4px; }
+        
+        /* Butonlar */
+        .lang-toggle { background-color: transparent; border: 2px solid #e74c3c; color: white !important; margin-left: 10px; border-radius: 5px; padding: 5px 12px !important; }
+        .lang-toggle:hover { background-color: #e74c3c !important; }
+        .theme-toggle { background-color: #f39c12; color: white; border: none; padding: 6px 12px; margin-left: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        
+        /* İçerik Alanı */
+        .article-container { max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .article-title { font-size: 28px; color: #2c3e50; margin-bottom: 10px; }
+        .article-date { color: #888; font-size: 14px; margin-bottom: 20px; }
+        .article-content { font-size: 16px; line-height: 1.8; color: #444; min-height: 200px; } /* Boşken de güzel dursun diye min-height eklendi */
+        .back-button { display: inline-block; margin-top: 30px; color: #e74c3c; text-decoration: none; font-weight: bold; }
+        
+        /* Gece Modu */
+        body.dark-mode { background-color: #1a1a1a; color: #f1f1f1; }
+        body.dark-mode header { background-color: #0d1117; }
+        body.dark-mode nav { background-color: #161b22; }
+        body.dark-mode .article-container { background-color: #21262d; box-shadow: 0 4px 8px rgba(255,255,255,0.05); }
+        body.dark-mode .article-title { color: #c9d1d9; }
+        body.dark-mode .article-content, body.dark-mode .article-date { color: #8b949e; }
+    </style>
+</head>
+<body>
+    <header><h1>SERHAT TEKİN</h1></header>
+    
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="bilisim.html">Bilişim</a>
+        <a href="sinema.html">Sanat & Sinema</a>
+        <a href="gezi.html">Gezi</a>
+        <a href="yakit-menzili.html">Otomotiv</a>
+        <a href="sosyal-medya.html">Sosyal Medya</a>
+        <a href="akademi.html">Akademi</a>
+        <a href="spor.html">Spor</a>
+        <a href="projeler.html">Projelerim</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙 Gece Modu</button>
+        <a href="index-en.html" class="lang-toggle">🇬🇧 EN</a>
+    </nav>
+
+    <div class="article-container">
+        <h1 class="article-title">Yazı Başlığı Buraya Gelecek</h1>
+        <div class="article-date">Tarih | Kategori</div>
+        
+        <div class="article-content">
+            <p>İçerik buraya eklenecek. Sayfanın tasarımı ve kodlaması tamamlandı, sadece yazarını bekliyor.</p>
+        </div>
+        
+        <a href="index.html" class="back-button">&larr; Ana Sayfaya Dön</a>
+    </div>
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark') { document.body.classList.add('dark-mode'); document.getElementById('themeBtn').innerText = '☀️ Gündüz Modu'; }
+        function toggleTheme() { document.body.classList.toggle('dark-mode'); let btn = document.getElementById('themeBtn'); if (document.body.classList.contains('dark-mode')) { localStorage.setItem('theme', 'dark'); btn.innerText = '☀️ Gündüz Modu'; } else { localStorage.setItem('theme', 'light'); btn.innerText = '🌙 Gece Modu'; } }
+    </script>
+</body>
+</html>
