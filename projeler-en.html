@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Serhat Tekin</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSHVG2K1H6"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QSHVG2K1H6');</script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 0; transition: 0.3s; }
+        header { background-color: #2c3e50; color: white; padding: 15px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        nav { background-color: #34495e; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 5px 0; transition: 0.3s; }
+        nav a { color: white; text-decoration: none; padding: 12px 20px; font-size: 16px; font-weight: bold; transition: background 0.3s; }
+        nav a:hover { background-color: #e74c3c; border-radius: 4px; }
+        .lang-toggle { background-color: transparent; border: 2px solid #e74c3c; color: white !important; margin-left: 15px; border-radius: 5px; padding: 6px 15px !important; }
+        .lang-toggle:hover { background-color: #e74c3c !important; }
+        
+        .projects-container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .page-title { text-align: center; color: #2c3e50; font-size: 32px; border-bottom: 3px solid #e74c3c; display: inline-block; padding-bottom: 10px; margin-bottom: 40px; }
+        
+        .project-card { background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; margin-bottom: 30px; overflow: hidden; border-left: 5px solid #3498db; transition: transform 0.3s; }
+        .project-card:hover { transform: scale(1.02); }
+        .project-content { padding: 30px; flex: 2; min-width: 300px; }
+        .project-category { color: #e74c3c; font-weight: bold; font-size: 14px; text-transform: uppercase; margin-bottom: 5px; }
+        .project-title { font-size: 24px; color: #2c3e50; margin: 0 0 15px 0; }
+        .project-desc { font-size: 16px; line-height: 1.6; color: #555; margin-bottom: 20px; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tech-tag { background-color: #2c3e50; color: white; padding: 5px 12px; border-radius: 15px; font-size: 12px; font-weight: bold; }
+
+        .theme-toggle { background-color: #f39c12; color: white; border: none; padding: 8px 15px; margin-left: 15px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        body.dark-mode { background-color: #1a1a1a; color: #f1f1f1; }
+        body.dark-mode header { background-color: #0d1117; }
+        body.dark-mode nav { background-color: #161b22; }
+        body.dark-mode .project-card { background-color: #21262d; border-left-color: #e74c3c; }
+        body.dark-mode .page-title, body.dark-mode .project-title { color: #c9d1d9; }
+        body.dark-mode .project-desc { color: #8b949e; }
+    </style>
+</head>
+<body>
+    <header><h1>SERHAT TEKİN</h1></header>
+    <nav>
+        <a href="index-en.html">Home</a>
+        <a href="bilisim-en.html">IT</a>
+        <a href="sinema-en.html">Art & Cinema</a>
+        <a href="gezi-en.html">Travel</a>
+        <a href="yakit-menzili-en.html">Automotive</a>
+        <a href="projeler-en.html">Projects</a>
+        <a href="hakkimda-en.html">About</a>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙 Dark Mode</button>
+        <a href="projeler.html" class="lang-toggle">🇹🇷 TR</a>
+    </nav>
+
+    <div class="projects-container">
+        <div style="text-align: center;">
+            <h2 class="page-title">My Projects and Experiences</h2>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-category">International Relations & Diplomacy</div>
+                <h3 class="project-title">NEVMUN Global Crisis Resolution Papers</h3>
+                <p class="project-desc">Official English resolution papers prepared through teamwork, debated, and presented in accordance with the United Nations format regarding global problems at the Nevzat Ayaz Anatolian High School Model United Nations (NEVMUN) conference.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Crisis Management</span>
+                    <span class="tech-tag">Advanced English (C1)</span>
+                    <span class="tech-tag">Diplomacy</span>
+                    <span class="tech-tag">Teamwork</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark') { document.body.classList.add('dark-mode'); document.getElementById('themeBtn').innerText = '☀️ Light Mode'; }
+        function toggleTheme() { document.body.classList.toggle('dark-mode'); let btn = document.getElementById('themeBtn'); if (document.body.classList.contains('dark-mode')) { localStorage.setItem('theme', 'dark'); btn.innerText = '☀️ Light Mode'; } else { localStorage.setItem('theme', 'light'); btn.innerText = '🌙 Dark Mode'; } }
+    </script>
+</body>
+</html>

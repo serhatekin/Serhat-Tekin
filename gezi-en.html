@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visa-Free Balkans | Serhat Tekin</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSHVG2K1H6"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QSHVG2K1H6');</script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 0; transition: 0.3s; }
+        header { background-color: #2c3e50; color: white; padding: 15px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        nav { background-color: #34495e; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 5px 0; transition: 0.3s; }
+        nav a { color: white; text-decoration: none; padding: 12px 20px; font-size: 16px; font-weight: bold; transition: background 0.3s; }
+        nav a:hover { background-color: #e74c3c; border-radius: 4px; }
+        .lang-toggle { background-color: transparent; border: 2px solid #e74c3c; color: white !important; margin-left: 15px; border-radius: 5px; padding: 6px 15px !important; }
+        .lang-toggle:hover { background-color: #e74c3c !important; }
+        .article-container { max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .article-title { font-size: 28px; color: #2c3e50; margin-bottom: 10px; }
+        .article-date { color: #888; font-size: 14px; margin-bottom: 20px; }
+        .article-content { font-size: 16px; line-height: 1.8; color: #444; }
+        .back-button { display: inline-block; margin-top: 30px; color: #e74c3c; text-decoration: none; font-weight: bold; }
+        .theme-toggle { background-color: #f39c12; color: white; border: none; padding: 8px 15px; margin-left: 15px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        body.dark-mode { background-color: #1a1a1a; color: #f1f1f1; }
+        body.dark-mode header { background-color: #0d1117; }
+        body.dark-mode nav { background-color: #161b22; }
+        body.dark-mode .article-container { background-color: #21262d; box-shadow: 0 4px 8px rgba(255,255,255,0.05); }
+        body.dark-mode .article-title { color: #c9d1d9; }
+        body.dark-mode .article-content, body.dark-mode .article-date { color: #8b949e; }
+    </style>
+</head>
+<body>
+    <header><h1>SERHAT TEKİN</h1></header>
+    <nav>
+        <a href="index-en.html">Home</a>
+        <a href="bilisim-en.html">IT</a>
+        <a href="sinema-en.html">Art & Cinema</a>
+        <a href="gezi-en.html">Travel</a>
+        <a href="yakit-menzili-en.html">Automotive</a>
+        <a href="projeler-en.html">Projects</a>
+        <a href="hakkimda-en.html">About</a>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙 Dark Mode</button>
+        <a href="gezi.html" class="lang-toggle">🇹🇷 TR</a>
+    </nav>
+
+    <div class="article-container">
+        <h1 class="article-title">Visa-Free Balkans: Skopje and Pristina</h1>
+        <div class="article-date">March 27, 2026 | Category: Travel</div>
+        <div class="article-content">
+            <p>North Macedonia and Kosovo are among the top budget-friendly and historical routes you can visit just by grabbing your passport.</p>
+            <p>While you can cross the Stone Bridge and wander around the old bazaar in Skopje, you encounter a much younger and more dynamic cafe culture in Pristina. Traveling between the two countries by bus is both very easy and highly affordable.</p>
+            <p><b>Travel Tip:</b> To avoid being without internet at your destinations, download offline maps in advance and keep local transportation apps ready on your phone.</p>
+        </div>
+        <a href="index-en.html" class="back-button">&larr; Back to Home</a>
+    </div>
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark') { document.body.classList.add('dark-mode'); document.getElementById('themeBtn').innerText = '☀️ Light Mode'; }
+        function toggleTheme() { document.body.classList.toggle('dark-mode'); let btn = document.getElementById('themeBtn'); if (document.body.classList.contains('dark-mode')) { localStorage.setItem('theme', 'dark'); btn.innerText = '☀️ Light Mode'; } else { localStorage.setItem('theme', 'light'); btn.innerText = '🌙 Dark Mode'; } }
+    </script>
+</body>
+</html>
