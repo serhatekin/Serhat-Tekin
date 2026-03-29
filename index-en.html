@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serhat Tekin | Research and Discovery Portal</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSHVG2K1H6"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QSHVG2K1H6');</script>
+
     <style>
-        /* Sitenin Genel Ayarları */
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; transition: background-color 0.3s, color 0.3s; }
         header { background-color: #2c3e50; color: white; padding: 15px 0; text-align: center; transition: 0.3s; }
         header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        
         nav { background-color: #34495e; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 5px 0; transition: 0.3s; }
-        nav a { color: white; text-decoration: none; padding: 12px 20px; font-size: 16px; font-weight: bold; transition: background 0.3s; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-size: 15px; font-weight: bold; transition: background 0.3s; }
         nav a:hover { background-color: #e74c3c; border-radius: 4px; }
         
-        /* Dil Seçeneği Butonu */
-        .lang-toggle { background-color: transparent; border: 2px solid #e74c3c; color: white !important; margin-left: 15px; border-radius: 5px; padding: 6px 15px !important; }
+        .lang-toggle { background-color: transparent; border: 2px solid #e74c3c; color: white !important; margin-left: 10px; border-radius: 5px; padding: 5px 12px !important; }
         .lang-toggle:hover { background-color: #e74c3c !important; }
+        .theme-toggle { background-color: #f39c12; color: white; border: none; padding: 6px 12px; margin-left: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        .theme-toggle:hover { background-color: #e67e22; }
 
         .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
         .welcome-text { text-align: center; margin-bottom: 40px; }
@@ -31,9 +36,6 @@
 
         footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px 0; margin-top: 50px; transition: 0.3s; }
 
-        /* Gece Modu Butonu ve Renkleri */
-        .theme-toggle { background-color: #f39c12; color: white; border: none; padding: 8px 15px; margin-left: 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px; transition: 0.3s; }
-        .theme-toggle:hover { background-color: #e67e22; }
         body.dark-mode { background-color: #1a1a1a; color: #f1f1f1; }
         body.dark-mode header, body.dark-mode footer { background-color: #0d1117; }
         body.dark-mode nav { background-color: #161b22; }
@@ -46,12 +48,15 @@
 <body>
 
     <header><h1>SERHAT TEKİN</h1></header>
-   <nav>
+    <nav>
         <a href="index-en.html">Home</a>
         <a href="bilisim-en.html">IT</a>
         <a href="sinema-en.html">Art & Cinema</a>
         <a href="gezi-en.html">Travel</a>
         <a href="yakit-menzili-en.html">Automotive</a>
+        <a href="sosyal-medya-en.html">Social Media</a>
+        <a href="akademi-en.html">Academy</a>
+        <a href="spor-en.html">Sports</a>
         <a href="projeler-en.html">Projects</a>
         <a href="hakkimda-en.html">About</a>
         
@@ -66,66 +71,48 @@
         </div>
 
         <div class="grid-container">
+            <div class="card"><img src="resimler/sinema.jpg" alt="Art & Cinema"><div class="card-body"><div class="card-category">Art & Cinema</div><h3 class="card-title">Tommy Shelby and Black Star Day</h3><p class="card-desc">What does this legendary concept in the Peaky Blinders universe actually represent psychologically?</p><a href="sinema-en.html" class="read-more">Read More &rarr;</a></div></div>
+            <div class="card"><img src="resimler/gezi.jpg" alt="Travel"><div class="card-body"><div class="card-category">Travel</div><h3 class="card-title">Visa-Free Balkans: Skopje and Pristina</h3><p class="card-desc">A guide to border crossings, local transport, and budget planning for North Macedonia and Kosovo.</p><a href="gezi-en.html" class="read-more">Read More &rarr;</a></div></div>
+            <div class="card"><img src="resimler/bilisim.jpg" alt="IT"><div class="card-body"><div class="card-category">IT</div><h3 class="card-title">Why are OOP and Data Structures Important?</h3><p class="card-desc">Life-saving practical coding notes for Management Information Systems students.</p><a href="bilisim-en.html" class="read-more">Read More &rarr;</a></div></div>
+            <div class="card"><img src="resimler/otomotiv.jpg" alt="Automotive"><div class="card-body"><div class="card-category">Automotive</div><h3 class="card-title">What Happens When the Fuel Light Comes On?</h3><p class="card-desc">Fuel consumption analysis for 1.4 D-4D diesel engines and what car owners need to know.</p><a href="yakit-menzili-en.html" class="read-more">Read More &rarr;</a></div></div>
+            
             <div class="card">
-                <img src="resimler/sinema.jpg" alt="Art & Cinema">
+                <img src="resimler/akademi.jpg" alt="Academy">
                 <div class="card-body">
-                    <div class="card-category">Art & Cinema</div>
-                    <h3 class="card-title">Tommy Shelby and Black Star Day</h3>
-                    <p class="card-desc">What does this legendary concept in the Peaky Blinders universe actually represent psychologically?</p>
-                    <a href="sinema.html" class="read-more">Read More &rarr;</a>
+                    <div class="card-category">Academy</div>
+                    <h3 class="card-title">Geotechnical Design of a 13-Story Building</h3>
+                    <p class="card-desc">An analysis of the geotechnical and structural design reporting process for a multi-story building based on soil survey data.</p>
+                    <a href="akademi-en.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="resimler/gezi.jpg" alt="Travel">
+                <img src="resimler/spor.jpg" alt="Sports">
                 <div class="card-body">
-                    <div class="card-category">Travel</div>
-                    <h3 class="card-title">Visa-Free Balkans: Skopje and Pristina</h3>
-                    <p class="card-desc">A guide to border crossings, local transport, and budget planning for North Macedonia and Kosovo.</p>
-                    <a href="gezi.html" class="read-more">Read More &rarr;</a>
+                    <div class="card-category">Sports</div>
+                    <h3 class="card-title">Data-Driven Football Analysis</h3>
+                    <p class="card-desc">Team form status, statistical match data, and the algorithmic background of analysis sites.</p>
+                    <a href="spor-en.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="resimler/bilisim.jpg" alt="IT">
+                <img src="resimler/sosyal-medya.jpg" alt="Social Media">
                 <div class="card-body">
-                    <div class="card-category">IT</div>
-                    <h3 class="card-title">Why are OOP and Data Structures Important?</h3>
-                    <p class="card-desc">Life-saving practical coding notes for Management Information Systems students.</p>
-                    <a href="bilisim.html" class="read-more">Read More &rarr;</a>
+                    <div class="card-category">Social Media</div>
+                    <h3 class="card-title">Balkan Music and the Reels Algorithm</h3>
+                    <p class="card-desc">How do iconic melodies from masters like Goran Bregovic turn into viral trends on social media platforms?</p>
+                    <a href="sosyal-medya-en.html" class="read-more">Read More &rarr;</a>
                 </div>
             </div>
-
-            <div class="card">
-                <img src="resimler/otomotiv.jpg" alt="Automotive">
-                <div class="card-body">
-                    <div class="card-category">Automotive</div>
-                    <h3 class="card-title">What Happens When the Fuel Light Comes On?</h3>
-                    <p class="card-desc">Fuel consumption analysis for 1.4 D-4D diesel engines and what car owners need to know.</p>
-                    <a href="yakit-menzili.html" class="read-more">Read More &rarr;</a>
-                </div>
             </div>
-        </div>
     </div>
 
     <footer><p>&copy; 2026 Serhat Tekin. All rights reserved.</p></footer>
 
     <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark-mode');
-            document.getElementById('themeBtn').innerText = '☀️ Light Mode';
-        }
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            let themeBtn = document.getElementById('themeBtn');
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-                themeBtn.innerText = '☀️ Light Mode';
-            } else {
-                localStorage.setItem('theme', 'light');
-                themeBtn.innerText = '🌙 Dark Mode';
-            }
-        }
+        if (localStorage.getItem('theme') === 'dark') { document.body.classList.add('dark-mode'); document.getElementById('themeBtn').innerText = '☀️ Light Mode'; }
+        function toggleTheme() { document.body.classList.toggle('dark-mode'); let btn = document.getElementById('themeBtn'); if (document.body.classList.contains('dark-mode')) { localStorage.setItem('theme', 'dark'); btn.innerText = '☀️ Light Mode'; } else { localStorage.setItem('theme', 'light'); btn.innerText = '🌙 Dark Mode'; } }
     </script>
 </body>
 </html>
